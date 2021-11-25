@@ -1,0 +1,21 @@
+<div class="center">
+  <h1>{{ incrementa }}</h1>
+  <p></p>
+  <section>
+    <button mat-raised-button color="accent" (click)="onAlert()">
+      Click me!
+    </button>
+  </section>
+  <section>
+    <button mat-raised-button color="primary" (click)="onClick()">
+      Counter
+    </button>
+  </section>
+  <p>
+    {{ respuesta }}
+  </p>
+</div>
+
+<!-- rutas automáticas para componentes -->
+
+<router-outlet></router-outlet>
