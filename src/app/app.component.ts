@@ -11,7 +11,7 @@ export class AppComponent {
   incrementa = 0;
 
   public onAlert(): void {    
-    if(confirm("Que onda xddd")) {
+    if(this.incrementa%2 === 0) {
       this.respuesta = 'Respuesta postiva';
     } else {
       this.respuesta = 'Respuesta negativa';
