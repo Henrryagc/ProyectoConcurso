@@ -1,0 +1,53 @@
+<mat-toolbar  color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+    (click)="opened=!opened">    
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+  
+<mat-sidenav-container class="sidenav-container">
+    
+    <mat-sidenav #sidenav (opened)="log('opened')" mode="side" [(opened)]="opened" >
+        Sidenav 
+        <mat-list>
+            <mat-list-item> 
+                <div class="nav">
+                    <div class="nav-icon">
+                        <a routerLink="/aula/home" routerLinkActive="active" mat-icon-button color="accent" ><mat-icon>home</mat-icon></a>
+                    </div>
+                    <div class="nav-text">Inicio</div>
+                </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <div class="nav">
+                    <div class="nav-icon">
+                        <a  routerLink="/aula/subjects" routerLinkActive="active" mat-icon-button color="accent" ><mat-icon>school</mat-icon></a>
+                    </div>
+                    <div class="nav-text">
+                        Cursos
+                    </div>
+                </div>                
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> <button mat-icon-button color="accent" ><mat-icon>favorite</mat-icon></button> </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> <button mat-icon-button color="accent" ><mat-icon>home</mat-icon></button> </mat-list-item>
+            <mat-divider></mat-divider>            
+        </mat-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <!--  <app-home></app-home> -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

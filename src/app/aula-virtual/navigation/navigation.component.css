@@ -1,0 +1,41 @@
+/*
+.sidenav-container {
+  height: 100%;
+}*/
+
+.sidenav {
+    width: 200px;    
+    background: cadetblue;
+    background-color: brown;
+}
+  /*
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  */
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-text {
+      margin-bottom: .8em;
+  }
+  .example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+  }
+  .mat-sidenav, .mat-sidenav-content {
+    padding: 24px;
+  }
+
+  .active {
+    background: yellow;
+  }

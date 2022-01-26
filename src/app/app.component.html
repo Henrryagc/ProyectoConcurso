@@ -1,33 +1,7 @@
-<div class="center">
-  <h1>{{ incrementa }}</h1>
 
-  <p></p>
-  <section>
-    <button mat-raised-button color="accent" (click)="onAlert()">
-      Click me!
-    </button>
-  </section>
-  <section>
-    <button mat-raised-button color="primary" (click)="onClick()">
-      Counter
-    </button>
-  </section>
-  <p>
-    {{ respuesta }}
-  </p>
-  <p>
-    holiiiii
-
-    holi waha
-Henrry
-
-  </p>
-  <h3>
-    esta es una prueba xD
-  </h3>
-</div>
-<app-form></app-form>
-<app-test></app-test>
-<!-- rutas automáticas para componentes -->
-
-
+    <ng-container *ngIf="isShow">
+        <a  mat-raised-button  (click)="onHide()" [routerLink]="goHome">Go Home</a>
+    </ng-container>
+    
+<router-outlet>
+</router-outlet>

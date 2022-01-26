@@ -6,23 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front';
-  respuesta = '';
-  incrementa = 0;
-
-  public onAlert(): void {    
-    if(this.incrementa%2 === 0) {
-      this.respuesta = 'Respuesta postiva';
-    } else {
-      this.respuesta = 'Respuesta negativa';
-    }
+  title = 'Aula Virtual UNAM';
+  goHome = '/aula/home'
+  isShow = true
+  onHide(): void {
+    this.isShow = false
   }
 
-  public onClick() {
-     this.incrementa = this.counter(this.incrementa)
-  }
-
-  private counter(incrementa: number): number {
-    return 1 + incrementa;
-  }
 }
