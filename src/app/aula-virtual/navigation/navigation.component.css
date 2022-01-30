@@ -39,3 +39,7 @@
   .active {
     background: yellow;
   }
+
+  .spacer {
+    flex: 1 1 auto;
+  }

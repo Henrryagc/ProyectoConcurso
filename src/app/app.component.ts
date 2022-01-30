@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aula Virtual UNAM';
-  goHome = '/aula/home'
-  isShow = true
-  onHide(): void {
-    this.isShow = false
-  }
-
 }
